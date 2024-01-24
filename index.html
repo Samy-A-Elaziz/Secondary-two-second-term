@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="photos/logo.png">
+    <link rel="stylesheet" href="language.css">
+    <title>SECONDARY-TWO-Books</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">   
+    </script>
+    <script>
+        $(window).scroll(function(){
+    $('nav').toggleClass('scrolled',$(this).scrollTop()>50);
+
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><img src="photos/logo.png" alt="logo" class="logo"></a>
+        <ul>
+            <li>
+                <a class="language" href="index.html">Language</a>
+            </li>
+            <li>
+                <a class="arabic" href="arabic.html">Arabic</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="face">
+        <h1>SECONDARY TWO</h1>
+        <h2>BOOKS</h2>
+    </div>
+    <div class="books">
+        <div class="scientific">
+            <p>scientific section</p>
+            <div><a href="" class="math-application">Math Application</a></div>
+            <div><a href="" class="physics">Physics</a></div>
+            <div><a href="" class="chemistry">Chemistry</a></div>
+            <div><a href="" class="pure-math">Pure Math</a></div>
+            <div><a href="" class="biology">Biology</a></div>
+        </div>
+        <div class="letirary">
+            <p>letirary section</p>
+            <div><a href="" class="arabic">Arabic</a></div>
+            <div><a href="" class="english">English</a></div>
+            <div><a href="" class="history">History</a></div>
+            <div><a href="" class="geography">Geography</a></div>
+            <div><a href="" class="philosophy">Philosophy</a></div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="photos/logo.png" alt="">
+            <p>it's a web page which contain alot of books of secondary two second term ministry educational egypt country.</p>
+        </div>
+    </footer>
+</body>
+</html>

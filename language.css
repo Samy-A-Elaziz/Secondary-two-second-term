@@ -1,0 +1,204 @@
+body{
+    background-color: #eee4e4;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.scrolled{
+    background-color: #000000;
+    color: black;
+    transition: all 0.3s ease 0;
+    li a{
+        color: #eee;
+    }
+    .language{
+        border-left: solid 3px #0248b0;
+    }
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline;
+    padding: 0px 20px;
+    font-size: large;
+}
+
+li a{
+    transition: all 0.3s ease 0;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 300;
+    padding: 3px;
+    z-index: 200;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.language{
+    border-left: solid 3px #000000;
+}
+
+li a:hover{
+    border-left: solid 3px #000000;
+}
+
+.logo{
+    width: 55px;
+    height: 40px;
+    position: relative;
+    top: 2%;
+    margin: 1%;
+}
+
+.face{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("photos/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(to right, black, #0248b0);
+}
+
+.face h1{
+    color: #000000;
+    font-size: 64px;
+    position: absolute;
+    right: 22%;
+    top: 27%;
+    text-align: right;
+    font-family: cursive;
+}
+
+.face h2{
+    color: #5271FF;
+    font-size: 66px;
+    position: absolute;
+    right: 40%;
+    top: 37%;
+    text-align: right;
+    font-family: cursive;
+}
+
+.books{
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+}
+
+.scientific,
+.letirary{
+    position: relative;
+    height: 50%;
+    width: 94%;
+    margin: 3%;
+    justify-content: space-between;
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+}
+
+p{
+    margin: 1%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0248b0;
+}
+
+.scientific div,
+.letirary div{
+    align-items: center;
+    width: 48%;
+    height: 25%;
+    background-color: #5271FF;
+    margin: 1%;
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    transition: 0.4s ease ;
+}
+
+.books a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.scientific div:hover{
+    color: #fd0000;
+    background: linear-gradient(to right, #0248b09a, #0248b09a);
+    border-radius: 50%;
+}
+
+.letirary div:hover{
+    color: #fd0000;
+    background: linear-gradient(to right, #0248b09a, #0248b09a);
+    border-radius: 50%;
+}
+
+footer{
+    position: absolute;
+    top: 340%;
+    left: 0;
+    background: linear-gradient(to right, rgb(221, 211, 76), rgb(57, 170, 29), rgb(214, 110, 24), rgb(59, 206, 150));
+    display: flex;
+    text-align: center;
+    color: black;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    font-size: 5px;
+    width: 100%;
+}
+
+footer img{
+    width: 55px;
+    height: 40px;
+}
+
+@media(max-width: 700px){
+    .face h1{
+        color: #000000;
+        font-size: 40px;
+        position: absolute;
+        right: 1%;
+        top: 24%;
+        text-align: right;
+        font-family: cursive;
+    }
+    .face h2{
+        color: #5271FF;
+        font-size: 55px;
+        position: absolute;
+        right: 26%;
+        top: 29%;
+        text-align: right;
+        font-family: cursive;
+    }
+}

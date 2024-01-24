@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="photos/logo.png">
+    <link rel="stylesheet" href="arabic.css">
+    <title>SECONDARY-TWO-Books</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">   
+    </script>
+    <script>
+        $(window).scroll(function(){
+    $('nav').toggleClass('scrolled',$(this).scrollTop()>50);
+
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><img src="photos/logo.png" alt="logo" class="logo"></a>
+        <ul>
+            <li>
+                <a class="language" href="index.html">Language</a>
+            </li>
+            <li>
+                <a class="arabic" href="arabic.html">Arabic</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="face">
+        <h1>كتب</h1>
+        <h2>ثانية ثانوي</h2>
+    </div>
+    <div class="books">
+        <div class="scientific">
+            <p>القسم العلمي</p>
+            <div><a href="" class="math-application">رياضة تطبيقية</a></div>
+            <div><a href="" class="physics">فيزياء</a></div>
+            <div><a href="" class="chemistry">كيمياء</a></div>
+            <div><a href="" class="pure-math">رياضة بحتة</a></div>
+            <div><a href="" class="biology">أحياء</a></div>
+        </div>
+        <div class="letirary">
+            <p>القسم الأدبي</p>
+            <div><a href="" class="arabic-subject">عربي</a></div>
+            <div><a href="" class="english">انجليزي</a></div>
+            <div><a href="" class="history">تاريخ</a></div>
+            <div><a href="" class="geography">جغرافيا</a></div>
+            <div><a href="" class="philosophy">فلسفة</a></div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="photos/logo.png" alt="">
+            <p>إنها صفحة ويب تحتوي على الكثير من كتب الصف الثاني الثانوي وزارة التربية والتعليم في مصر.</p>
+        </div>
+    </footer>
+</body>
+</html>
